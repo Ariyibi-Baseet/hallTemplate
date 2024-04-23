@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #fffcff;
+}
+
+#header {
+  padding: 10px;
+  color: rgb(205 92 92);
+  font-weight: bold;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(209, 226, 235, 0.25);
+}
+#header button {
+  background-color: #92a1d1;
+  border-color: inherit;
+}
+#container {
+  width: 770px;
+}
+#weekdays {
+  color: #247ba0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color: #e8f4fa;
+}
+#currentDay {
+  color: rgb(205 92 92);
+  font-weight: bold;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #fffcff !important;
+  box-shadow: none !important;
+}
+.card.newEventModal {
+  display: none;
+  z-index: 20;
+  position: absolute;
+  padding: 25px;
+  background-color: rgba(209, 226, 235, 1);
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  font-family: sans-serif;
+}
+.eventTitleInput,
+.eventTitleInput02 {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+eventTitleInput.error,
+.eventTitleInput02.error {
+  border: 2px solid red;
+}
+#modalBackDrop {
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  display: none;
+  z-index: 10;
+  position: absolute;
+}
+
+i:not(i.fa-eye) {
+  color: white;
+}
+
+ul {
+  list-style: hangul-consonant;
+  text-align: left;
+  margin-left: -10rem;
+}
+
+.error {
+  border: 2px solid red;
+}

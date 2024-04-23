@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<!--[if IE]> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Youth Hostel - Creative HTML Template" />
+    <meta name="author" content="CreateIT" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- <link rel="shortcut icon" href="favicon.png" /> -->
+    <link rel="shortcut icon" href="faviconHallify.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <title>LioraCity Event Center | Home page</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--[if lt IE 9]>
+      <script src="./assets/bootstrap/js/html5shiv.min.js"></script>
+      <script src="./assets/bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/modernizr.custom.js"></script>
+
+    <style>
+      .gallery-section img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .gallery-img-block {
+        margin-bottom: 30px;
+        position: relative;
+        padding: 10px;
+      }
+      .gallery-block {
+        position: relative;
+      }
+      .gallery-block-overlay {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      .gallery-block-overlay > p {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="cssAnimate ct-headroom--scrollUpMenu worldwide">
+    <!-- Preloader -->
+    <div id="preloader">
+      <span class="loader" data-loading-text="LOADING"></span>
+    </div>
+    <div class="ct-menuMobile">
+      <ul class="ct-menuMobile-navbar">
+        <li>
+          <a href="index.html">Home</a>
+          <div class="clearfix"></div>
+        </li>
+        <li>
+          <a href="about-us.html">About</a>
+          <div class="clearfix"></div>
+        </li>
+        <li>
+          <a href="room-types.html">Services</a>
+          <div class="clearfix"></div>
+        </li>
+        <li>
+          <a href="gallery.html">Photos</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div id="ct-js-wrapper" class="ct-pageWrapper">
+      <div class="ct-navbarMobile ct-navbarMobile--inverse">
+        <a class="navbar-brand" href="index.html">
+          <h4 style="font-weight: 800; color: #fff; margin-top: 20px">
+            LioraCity Event Center
+          </h4>
+        </a>
+        <button type="button" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Desktop navbar -->
+      <nav
+        class="navbar navbar-default ct-u-paddingBoth50"
+        data-background="#ffffff"
+        data-startnavbar="36"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="collapse navbar-collapse">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">
+                    <h4 style="font-weight: 800; color: #f77345">
+                      LioraCity Event Center
+                    </h4>
+                  </a>
+                </div>
+                <ul
+                  class="nav navbar-nav navbar-right ct-navbar--fadeIn"
+                  role="menu"
+                >
+                  <li role="menuitem" class="dropdown">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li role="menuitem" class="dropdown">
+                    <a href="about-us.html">About</a>
+                  </li>
+
+                  <li role="menuitem" class="dropdown">
+                    <a href="room-types.html">Services</a>
+                  </li>
+                  <li role="menuitem" class="dropdown active">
+                    <a href="gallery.html"
+                      ><span class="active-link"
+                        ><i class="icon-right-small"></i></span
+                      >Photos</a
+                    >
+                  </li>
+
+                  <li role="menuitem">
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header
+        class="ct-pageHeader ct-pageHeader-center ct-mediaSection"
+        data-height="151"
+        data-background="./assets/images/demo-content/header.jpg"
+        data-background-mobile="./assets/images/demo-content/header.jpg"
+      >
+        <div class="ct-mediaSection-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="ct-sectionHeader ct-sectionHeader--type1">
+                  <h3 class="ct-sectionHeader-title text-capitalize">
+                    Photo Gallery
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section
+        class="ct-u-paddingTop100 ct-u-paddingBottom50 text-center"
+        data-background="#ffffff"
+      >
+        <div class="container">
+          <!-- <div class="row">
+            <div class="col-md-6">
+              <div class="ct-galleryContainer ct-js-popupGallery">
+                <a
+                  href="assets/images/demo-content/gallery-1-sm.jpg"
+                  class="ct-js-magnificPopupImage"
+                  data-effect="mfp-zoom-in"
+                >
+                  <figure>
+                    <img
+                      src="assets/images/demo-content/gallery-1-sm.jpg"
+                      alt="Image"
+                    />
+                    <figcaption>
+                      <span class="ct-galleryContainer-inStock"
+                        >(14 pictures)</span
+                      >
+                      <h4 class="text-capitalize ct-galleryContainer-title">
+                        Grand New Opening Of Our Hostel
+                      </h4>
+                      <span class="btn btn-link ct-u-marginTop20"
+                        ><strong>See</strong> gallery<span
+                          ><i class="icon-right-small"></i></span
+                      ></span>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a
+                  href="assets/images/demo-content/hostel-1.jpg"
+                  class="ct-js-magnificPopupImage"
+                ></a>
+                <a
+                  href="assets/images/demo-content/hostel-3.jpg"
+                  class="ct-js-magnificPopupImage"
+                ></a>
+              </div>
+              <div
+                class="ct-galleryContainer ct-js-popupGallery ct-u-marginBoth35"
+              >
+                <a
+                  href="assets/images/demo-content/gallery-5-sm.jpg"
+                  class="ct-js-magnificPopupImage"
+                  data-effect="mfp-zoom-in"
+                >
+                  <figure>
+                    <img
+                      src="assets/images/demo-content/gallery-5-sm.jpg"
+                      alt="Image"
+                    />
+                    <figcaption>
+                      <span class="ct-galleryContainer-inStock"
+                        >(5 pictures)</span
+                      >
+                      <h4 class="ct-galleryContainer-title text-capitalize">
+                        Quiet Office Rooms
+                      </h4>
+                      <span class="btn btn-link ct-u-marginTop20"
+                        >See gallery<span><i class="icon-right-small"></i></span
+                      ></span>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a
+                  href="assets/images/demo-content/hostel-1.jpg"
+                  class="ct-js-magnificPopupImage"
+                ></a>
+                <a
+                  href="assets/images/demo-content/hostel-3.jpg"
+                  class="ct-js-magnificPopupImage"
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="ct-galleryContainer ct-js-popupGallery">
+                    <a
+                      href="assets/images/demo-content/gallery-2-sm.jpg"
+                      class="ct-js-magnificPopupImage"
+                      data-effect="mfp-zoom-in"
+                    >
+                      <figure>
+                        <img
+                          src="assets/images/demo-content/gallery-2-sm.jpg"
+                          alt="Image"
+                        />
+                        <figcaption>
+                          <span class="ct-galleryContainer-inStock"
+                            >(10 pictures)</span
+                          >
+                          <h4 class="ct-galleryContainer-title text-capitalize">
+                            Our Lobby
+                          </h4>
+                          <span class="btn btn-link ct-u-marginTop20"
+                            ><strong>See</strong> gallery<span
+                              ><i class="icon-right-small"></i></span
+                          ></span>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a
+                      href="assets/images/demo-content/hostel-1.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                    <a
+                      href="assets/images/demo-content/hostel-3.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="ct-galleryContainer ct-js-popupGallery">
+                    <a
+                      href="assets/images/demo-content/gallery-3-sm.jpg"
+                      class="ct-js-magnificPopupImage"
+                      data-effect="mfp-zoom-in"
+                    >
+                      <figure>
+                        <img
+                          src="assets/images/demo-content/gallery-3-sm.jpg"
+                          alt="Image"
+                        />
+                        <figcaption>
+                          <span class="ct-galleryContainer-inStock"
+                            >(34 pictures)</span
+                          >
+                          <h4 class="ct-galleryContainer-title text-capitalize">
+                            Our Rooms
+                          </h4>
+                          <span class="btn btn-link ct-u-marginTop20"
+                            ><strong>See</strong> gallery<span
+                              ><i class="icon-right-small"></i></span
+                          ></span>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a
+                      href="assets/images/demo-content/hostel-1.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                    <a
+                      href="assets/images/demo-content/hostel-3.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="ct-galleryContainer ct-js-popupGallery ct-u-marginBoth35"
+                  >
+                    <a
+                      href="assets/images/demo-content/gallery-4-sm.jpg"
+                      class="ct-js-magnificPopupImage"
+                      data-effect="mfp-zoom-in"
+                    >
+                      <figure>
+                        <img
+                          src="assets/images/demo-content/gallery-4-sm.jpg"
+                          alt="Image"
+                        />
+                        <figcaption>
+                          <span class="ct-galleryContainer-inStock"
+                            >(22 pictures)</span
+                          >
+                          <h4 class="ct-galleryContainer-title text-capitalize">
+                            Our Tasty Food
+                          </h4>
+                          <span class="btn btn-link ct-u-marginTop20"
+                            ><strong>See</strong> gallery<span
+                              ><i class="icon-right-small"></i></span
+                          ></span>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a
+                      href="assets/images/demo-content/hostel-1.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                    <a
+                      href="assets/images/demo-content/hostel-3.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="ct-galleryContainer ct-js-popupGallery">
+                    <a
+                      href="assets/images/demo-content/gallery-6-sm.jpg"
+                      class="ct-js-magnificPopupImage"
+                      data-effect="mfp-zoom-in"
+                    >
+                      <figure>
+                        <img
+                          src="assets/images/demo-content/gallery-6-sm.jpg"
+                          alt="Image"
+                        />
+                        <figcaption>
+                          <span class="ct-galleryContainer-inStock"
+                            >(18 pictures)</span
+                          >
+                          <h4 class="ct-galleryContainer-title text-capitalize">
+                            Suite Rooms
+                          </h4>
+                          <span class="btn btn-link ct-u-marginTop20"
+                            ><strong>See</strong> gallery<span
+                              ><i class="icon-right-small"></i></span
+                          ></span>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a
+                      href="assets/images/demo-content/hostel-1.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                    <a
+                      href="assets/images/demo-content/hostel-3.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="ct-galleryContainer ct-js-popupGallery">
+                    <a
+                      href="assets/images/demo-content/gallery-7-sm.jpg"
+                      class="ct-js-magnificPopupImage"
+                      data-effect="mfp-zoom-in"
+                    >
+                      <figure>
+                        <img
+                          src="assets/images/demo-content/gallery-7-sm.jpg"
+                          alt="Image"
+                        />
+                        <figcaption>
+                          <span class="ct-galleryContainer-inStock"
+                            >(22 pictures)</span
+                          >
+                          <h4 class="ct-galleryContainer-title text-capitalize">
+                            Our Terrace
+                          </h4>
+                          <span class="btn btn-link ct-u-marginTop20"
+                            ><strong>See</strong> gallery<span
+                              ><i class="icon-right-small"></i></span
+                          ></span>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <a
+                      href="assets/images/demo-content/hostel-1.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                    <a
+                      href="assets/images/demo-content/hostel-3.jpg"
+                      class="ct-js-magnificPopupImage"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="row gallery-section">
+            <!-- <div class="col-12 col-md-4 gallery-img-block">
+              <div class="gallery-block">
+                <img src="assets/images/bg_pattern_10.jpg" alt="Hall Images" />
+                <div class="gallery-block-overlay">
+                  <p>Heading</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <footer class="ct-footer ct-u-paddingTop60" data-background="#f6f6f6">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4 style="color: #f77345; font-weight: bold">
+                LioraCity Event Center
+              </h4>
+              <p style="padding-right: 20px">
+                Welcome to Lioracity Event Center, your go-to venue for
+                hassle-free hall rentals. We specialize in offering tailored
+                spaces for weddings, corporate gatherings, and community events.
+                Count on us for an exceptional rental experience that surpasses
+                expectations.
+              </p>
+            </div>
+            <div class="col-md-2">
+              <div class="ct-widget mx-auto">
+                <h5 class="ct-widget-title text-uppercase ct-u-marginBottom40">
+                  Explore
+                </h5>
+                <ul class="list-unstyled ct-list--type1" role="menu">
+                  <li role="menuitem">
+                    <a href="index.html" class="text-capitalize">Home</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="about-us.html" class="text-capitalize">About</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="room-types.html" class="text-capitalize"
+                      >Services</a
+                    >
+                  </li>
+                  <li role="menuitem">
+                    <a href="#" class="text-capitalize">Photos</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="contact.html" class="text-capitalize"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="ct-widget">
+                <h5 class="ct-widget-title text-uppercase ct-u-marginBottom40">
+                  Information
+                </h5>
+                <ul class="list-unstyled ct-list--type1" role="menu">
+                  <li role="menuitem">
+                    <a href="index.html" class="text-capitalize">Home</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="about-us.html" class="text-capitalize">About</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="room-types.html" class="text-capitalize"
+                      >Services</a
+                    >
+                  </li>
+                  <li role="menuitem">
+                    <a href="#" class="text-capitalize">Photos</a>
+                  </li>
+                  <li role="menuitem">
+                    <a href="contact.html" class="text-capitalize"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="ct-widget">
+                <h5 class="ct-widget-title text-uppercase ct-u-marginBottom40">
+                  Contact
+                </h5>
+                <ul class="list-unstyled ct-list--type1" role="menu">
+                  <li role="menuitem">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <a class="text-capitalize"
+                      >NO 1 OKO-OGBA ROAD, IRHIRHI JUNCTION. BENIN EDO STATE.
+                      NIGERIA</a
+                    >
+                  </li>
+                  <li role="menuitem">
+                    <i class="bi bi-envelope"></i>
+                    <a class="text-uppercase">
+                      reservation@lioracityeventcenter.com
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <i class="bi bi-telephone"></i>
+                    <a class="text-capitalize"> +234 704 116 7461</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ct-footerBottom text-center ct-u-paddingBoth30 ct-u-marginTop80"
+          data-background="#ffffff"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h6 class="ct-copyright">
+                  Made with
+                  <span class="ct-heart ct-heart--beating"
+                    ><i class="fa fa-heart"></i
+                  ></span>
+
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  .
+                  <span class="ct-u-whiteSpace--nowwrap"
+                    ><span class="ct-u-whiteSpace--nowwrap"
+                      >All Rights Reserved.</span
+                    ></span
+                  >
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Page wrapper [end] -->
+    <!-- JavaScripts -->
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/external.min.js"></script>
+
+    <!-- Main js file -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Slick -->
+    <script src="assets/js/slick/js/slick.js"></script>
+    <script src="assets/js/slick/js/init.js"></script>
+
+    <!-- Magnific popup gallery -->
+    <script src="assets/js/magnificpopup/magnificpopup.min.js"></script>
+    <script src="assets/js/magnificpopup/init.js"></script>
+
+    <!-- Media Section -->
+    <script src="assets/js/ct-mediaSection/js/smoothScroll.js"></script>
+    <script src="assets/js/ct-mediaSection/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/ct-mediaSection/js/media-section.js"></script>
+
+    <!--Topbar and Navbar effects-->
+    <script src="assets/js/headroom/headroom.js"></script>
+    <script src="assets/js/headroom/jQuery.headroom.js"></script>
+    <script src="assets/js/headroom/init.js"></script>
+
+    <!-- switcher -->
+    <script src="../demo/js/demo.js"></script>
+    <!-- <div id="stylechooser">
+      <div class="easyBox flat">
+        <p class="light h4">Accent <strong>Color</strong></p>
+        <a href="gallery.html#" class="halflings cog" id="styleToggle"
+          ><i class="fa fa-cogs"></i
+        ></a>
+      </div>
+
+      <div class="easyBox">
+        <div class="mkSpace">
+          <ul class="demoList clearfix">
+            <li>
+              <a href="gallery.html#" title="worldwide" data-value="worldwide"
+                ><span class="demoColor" style="background: #f77345"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="gallery.html#"
+                title="singleowner"
+                data-value="singleowner"
+                ><span class="demoColor" style="background: #b428a2"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="gallery.html#"
+                title="onepager"
+                data-value="onepager-type"
+                ><span class="demoColor" style="background: #69cb5e"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="easyBox">
+        <div class="mkSpace">
+          <div class="title">
+            <p class="light h5">Dropdown <strong>Style</strong></p>
+          </div>
+          <div class="switch-animations">
+            <div class="select">
+              <select id="dropdownSelect" onchange="selectDropdown()">
+                <option value="ct-navbar--fadeIn">fadeIn</option>
+                <option value="ct-navbar--fadeInUp">fadeInUp</option>
+                <option value="ct-navbar--fadeInLeft">fadeInLeft</option>
+                <option value="ct-navbar--fadeInRight">fadeInRight</option>
+                <option value="ct-navbar--fadeInDown">fadeInDown</option>
+                <option value="ct-navbar--pulse">pulse</option>
+                <option value="ct-navbar--bounceIn">bounceIn</option>
+                <option value="ct-navbar--bounceInLeft">bounceInLeft</option>
+                <option value="ct-navbar--bounceInRight">bounceInRight</option>
+                <option value="ct-navbar--flipInX">flipInX</option>
+                <option value="ct-navbar--flipInY">flipInY</option>
+                <option value="ct-navbar--zoomIn">zoomIn</option>
+                <option value="ct-navbar--zoomInDown">zoomInDown</option>
+                <option value="ct-navbar--zoomInUp">zoomInUp</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="easyBox">
+        <div class="title">
+          <p class="light h5">Body <strong>Layout</strong></p>
+        </div>
+        <div class="switch-toggle">
+          <div class="onoffswitch">
+            <input
+              type="checkbox"
+              data-refresh="true"
+              data-value="boxed"
+              data-clear-container-deselected="#patternContainer"
+              name="onoffswitch"
+              class="onoffswitch-checkbox"
+              id="myonoffswitch"
+            />
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="easyBox">
+        <div class="title">
+          <p class="light h5">Background <strong>Pattern</strong></p>
+        </div>
+        <div id="patternContainer">
+          <div class="mkSpace">
+            <ul class="demoList clearfix">
+              <li>
+                <a
+                  data-refresh="true"
+                  data-dependent="#myonoffswitch:not(.demoActive)"
+                  href="gallery.html#"
+                  class="refresh"
+                  title="ptn2"
+                  data-value="ptn2"
+                  ><span
+                    class="demoPattern"
+                    style="background: url('assets/images/bg_pattern_02.jpg')"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  data-refresh="true"
+                  data-dependent="#myonoffswitch:not(.demoActive)"
+                  href="gallery.html#"
+                  class="refresh"
+                  title="ptn10"
+                  data-value="ptn10"
+                  ><span
+                    class="demoPattern"
+                    style="background: url('assets/images/bg_pattern_10.jpg')"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  data-refresh="true"
+                  data-dependent="#myonoffswitch:not(.demoActive)"
+                  href="gallery.html#"
+                  class="refresh"
+                  title="ptn9"
+                  data-value="ptn9"
+                  ><span
+                    class="demoPattern"
+                    style="background: url('assets/images/bg_pattern_09.jpg')"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  data-refresh="true"
+                  data-dependent="#myonoffswitch:not(.demoActive)"
+                  href="gallery.html#"
+                  class="refresh"
+                  title="ptn5"
+                  data-value="ptn5"
+                  ><span
+                    class="demoPattern"
+                    style="background: url('assets/images/bg_pattern_05.jpg')"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  data-refresh="true"
+                  data-dependent="#myonoffswitch:not(.demoActive)"
+                  href="gallery.html#"
+                  class="refresh"
+                  title="ptn7"
+                  data-value="ptn7"
+                  ><span
+                    class="demoPattern"
+                    style="background: url('assets/images/bg_pattern_07.jpg')"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  data-refresh="true"
+                  data-dependent="#myonoffswitch:not(.demoActive)"
+                  href="gallery.html#"
+                  class="refresh"
+                  title="ptn11"
+                  data-value="ptn11"
+                  ><span
+                    class="demoPattern"
+                    style="background: url('assets/images/bg_pattern_11.jpg')"
+                  ></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end switcher -->
+  </body>
+</html>
