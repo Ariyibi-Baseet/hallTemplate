@@ -5,14 +5,11 @@ const button = document.querySelector(".form-btn");
 const subject = document.querySelector(".subject");
 const message = document.querySelector(".message");
 
-// alert();
-
 form.addEventListener("submit", (e) => {
-  alert();
   e.preventDefault();
   const formData = new FormData();
   formData.append("email", email.value);
-  formData.append("fullname", fullname.value);
+  formData.append("name", fullname.value);
   formData.append("subject", subject.value);
   formData.append("message", message.value);
 
@@ -28,9 +25,20 @@ form.addEventListener("submit", (e) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      Swal.fire({
+        icon: "success",
+        title: data.data,
+        showConfirmButton: false,
+        timer: 1500,
+      });
     })
     .catch((error) => {
+      Swal.fire({
+        icon: "error",
+        title: "An Error Occur, Kindly Refresh and try again",
+        showConfirmButton: false,
+        timer: 1500,
+      });
       console.error("There was a problem with the fetch operation:", error);
     });
 });
