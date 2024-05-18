@@ -1,0 +1,121 @@
+/* ============ mobile view ============ */
+
+@media all and (max-width: 991px) {
+    .offcanvas-header {
+        display: block;
+        padding: 10px;
+    }
+    .mobile-offcanvas {
+        visibility: hidden;
+        transform: translateX(-100%);
+        border-radius: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1200;
+        width: 80%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+    }
+    .mobile-offcanvas.show {
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .mobile-offcanvas .container,
+    .mobile-offcanvas .container-fluid {
+        display: block;
+    }
+    .offcanvas-header .btn-close {
+        color: #fff;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        background: none;
+    }
+    .main-menu .navbar-brand {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    nav.main-menu ul li a.book-btn {
+        margin-left: 0px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .main-menu.position-sticky {
+        top: 0px;
+        z-index: 11;
+        height: 100vh;
+        position: absolute !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .header-top .contact-info {
+        text-align: center;
+    }
+    .header-top .social-media {
+        text-align: center;
+    }
+    .contact-form {
+        display: block;
+    }
+    .form-img {
+        width: 100%;
+        min-height: 380px;
+    }
+    .form-content {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .main-title h2 {
+        font-size: 36px;
+    }
+    .insurance-cover-links ul li a {
+        font-size: 18px;
+    }
+    .main-title {
+        margin-bottom: 40px;
+    }
+    section {
+        padding: 40px 0px;
+    }
+    #GoBack {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 575px) {
+    .copyright p {
+        font-size: 13px;
+        text-align: center;
+    }
+    .designed-by {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px) {
+    .header-top .contact-info li a {
+        font-size: 12px;
+        margin: 0px 10px 0px 0px;
+        padding-bottom: 0px;
+    }
+    .header-top .contact-info li a i {
+        font-size: 14px;
+    }
+    .header-top .social-media li a {
+        font-size: 14px;
+    }
+}
+
+
+/* ============ mobile view .end// ============ */
