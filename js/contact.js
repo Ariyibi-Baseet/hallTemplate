@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
   const formData = new FormData();
   formData.append("email", email.value);
   formData.append("name", fullname.value);
-//   formData.append("subject", subject.value);
+  //   formData.append("subject", subject.value);
   formData.append("message", message.value);
 
   // Construct the fetch request
