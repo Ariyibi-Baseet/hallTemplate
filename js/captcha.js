@@ -358,7 +358,7 @@ var captcha = sliderCaptcha({
       captchaSuccessMessage.innerHTML =
         "You can now proceed by Clicking Submit Button";
       contactBtn.removeAttribute("disabled");
-      captcha.reset();
+      //   captcha.reset();
     };
     successFulCaptcha();
   },
