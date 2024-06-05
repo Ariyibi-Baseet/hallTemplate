@@ -336,8 +336,8 @@
 let captchaSuccessMessage = document.querySelector(".captcha-success-message");
 let contactBtn = document.querySelector(".contact-us-btn");
 
-contactBtn.setAttribute("disabled", "disabled");
-
+// contactBtn.setAttribute("disabled", "disabled");
+contactBtn.style.display = "none";
 // ----set-captcha with script
 var captcha = sliderCaptcha({
   id: "captcha",
@@ -357,7 +357,8 @@ var captcha = sliderCaptcha({
     var successFulCaptcha = function () {
       captchaSuccessMessage.innerHTML =
         "You can now proceed by Clicking Submit Button";
-      contactBtn.removeAttribute("disabled");
+      // contactBtn.removeAttribute("disabled");
+      contactBtn.style.display = "block";
       captcha.reset();
     };
     successFulCaptcha();
