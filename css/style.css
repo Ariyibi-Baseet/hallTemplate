@@ -935,3 +935,8 @@ section {
 .designed-by a:hover {
   color: #ffa500;
 }
+
+.social-links a,
+.address a {
+  text-decoration: none;
+}
