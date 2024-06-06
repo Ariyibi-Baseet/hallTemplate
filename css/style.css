@@ -86,6 +86,13 @@ ul {
   margin: 0px;
 }
 
+/* ********** Navbar ************ */
+@media screen and (max-width: 500px) {
+  .navbar-brand {
+    font-size: 30px !important;
+  }
+}
+
 /**** Go Back Btn ****/
 
 #GoBack {

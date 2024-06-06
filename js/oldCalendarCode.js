@@ -58,7 +58,7 @@ async function fetchData() {
     loadCalendar();
     return data;
   } catch (error) {
-    console.error("Error fetching data:", error);
+    return error;
   }
 }
 
@@ -111,11 +111,13 @@ function removeEvent() {
 }
 
 function initPreviousBtn() {
+  console.log("previousBtn");
   nav--;
   loadCalendar();
 }
 
 function initNextBtn() {
+  console.log("nextBtn");
   nav++;
   loadCalendar();
 }
@@ -124,19 +126,29 @@ function loadCalendar() {
   calendar.innerHTML = "";
 
   const dt = new Date();
+  console.log("-- dt : " + dt);
 
   if (nav !== 0) {
     dt.setMonth(new Date().getMonth() + nav);
   }
 
   const year = dt.getFullYear();
+  console.log("-- year : " + year);
+
   const month = dt.getMonth();
+  console.log("-- month : " + month);
+
   const day = dt.getDate();
+  console.log("-- day : " + day);
 
   const monthString = dt.toLocaleDateString("en-US", { month: "long" });
+  console.log("-- monthString : " + monthString);
+
   monthDisplay.innerHTML = monthString.substring(0, 3) + " " + year;
 
   const firstDayOfMonth = new Date(year, month, 1);
+  console.log("-- firstDayOfMonth : " + firstDayOfMonth);
+
   const options = {
     weekday: "long",
     year: "numeric",
@@ -145,14 +157,23 @@ function loadCalendar() {
   };
 
   const dateString = firstDayOfMonth.toLocaleDateString("en-US", options);
+  console.log("-- dateString : " + dateString);
+
   const firstDayWeek = dateString.split(",")[0];
+  console.log("-- firstDayWeek : " + firstDayWeek);
+
   const paddingDays = days.indexOf(firstDayWeek);
+  console.log("-- paddingDays : " + paddingDays);
+
   const daysInMonth = new Date(year, month + 1, 0).getDate();
+  console.log("-- daysInMonth : " + daysInMonth);
 
   const currentDay00 = nav == 0 ? dt.toLocaleDateString("en-US", options) : "";
   const currentDay = nav == 0 ? currentDay00.split(",")[1] : "";
+  console.log("-- currentDay : " + currentDay);
 
   const countDays = paddingDays + daysInMonth;
+  console.log("-- countDays : " + countDays);
 
   let days01 = [];
 
@@ -170,7 +191,9 @@ function loadCalendar() {
   const ref = localStorage.getItem("events");
 
   for (let i = 0; i < days01.length; i++) {
+    const id = days01[i].id;
     const day01 = days01[i].day;
+    console.log("day01 : " + day01);
     const dayString =
       days01[i].month + "/" + days01[i].day + "/" + days01[i].year;
     let currentDay = days01[i].currentDay;
@@ -183,11 +206,11 @@ function loadCalendar() {
       daySquare.textContent = day01;
 
       if (ref) {
-        const events = JSON.parse(ref);
-        for (let j = 0; j < events.length; j++) {
+        events = JSON.parse(ref);
+        for (let i = 0; i < events.length; i++) {
           if (
-            events[j].date_start == dayString ||
-            events[j].date_end == dayString
+            events[i].date_start == dayString ||
+            events[i].date_end == dayString
           ) {
             const eventDiv = document.createElement("div");
             eventDiv.classList.add("event");
@@ -202,8 +225,12 @@ function loadCalendar() {
     if (currentDay) {
       daySquare.setAttribute("id", "currentDay");
     }
+    const test = currentDay == true ? "-- currentDay" : "";
+    console.log(`dayString[${i}] : ${dayString} ${test}`);
     calendar.appendChild(daySquare);
   }
 }
 
 loadCalendar();
+
+//  https://github.com/portexe/VanillaCalendar/blob/master/script
