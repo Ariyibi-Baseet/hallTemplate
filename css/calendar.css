@@ -32,11 +32,9 @@
   #container {
     width: 100%;
     overflow-x: scroll;
-    border: 2px solid white;
   }
 }
 #weekdays {
-  /* color: #247ba0; */
   color: #fff;
   text-align: center;
   width: 100%;
